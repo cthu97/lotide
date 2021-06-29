@@ -11,9 +11,12 @@ const middle = (arr) => {
   }
   if (arr.length % 2 !== 0) {
     //odd number ones
+    let newArr =[]
     mid = arr.length / 2
     mid = Math.round(mid)
-    return arr[mid - 1]
+    newArr.push(mid)
+    console.log(newArr)
+    return newArr
   }
   else if (arr.length % 2 === 0) {
     //even numbers
